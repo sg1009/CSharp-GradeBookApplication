@@ -5,7 +5,7 @@
         Standard,
         Ranked,
         ESNU,
-        OneTwoFour,
+        OneToFour,
         SixPoint
     }
 }
