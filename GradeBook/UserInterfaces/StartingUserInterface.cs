@@ -36,7 +36,7 @@ namespace GradeBook.UserInterfaces
             var parts = command.Split(' ');
             if (parts.Length != 3)
             {
-                Console.WriteLine("Command not valid, Create requires a name and a type of gradebook.");
+                Console.WriteLine("Command not valid, Create requires a name and type of gradebook.");
                 return;
             }
             var name = parts[1];
@@ -48,7 +48,7 @@ namespace GradeBook.UserInterfaces
                 gradeBook = new RankedGradeBook(name);
             else
             {
-                Console.WriteLine(name + " is not a supported type of gradebook, please try again");
+                Console.WriteLine(parts[2] + " is not a supported type of gradebook, please try again");
                 return;
             }
 
